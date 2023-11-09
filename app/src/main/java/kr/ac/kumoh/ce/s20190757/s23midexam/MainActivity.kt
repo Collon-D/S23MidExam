@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         val pressed = it.data?.getBooleanExtra(
             SecondActivity.BUTTON_PRESSED, false) ?: false
         if (pressed)
-            view.btnFourth.text.toString().plus(" (눌림) ")
+            view.btnFourth.text = view.btnFourth.text.toString().plus(" (눌림) ")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

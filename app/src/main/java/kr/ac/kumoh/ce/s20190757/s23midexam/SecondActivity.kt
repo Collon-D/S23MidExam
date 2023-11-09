@@ -57,7 +57,7 @@ fun NeuvilletteButton() {
     val activity = LocalContext.current as Activity
     Button(onClick = {
         val result = Intent()
-        result.getBooleanExtra(SecondActivity.BUTTON_PRESSED, true)
+        result.putExtra(SecondActivity.BUTTON_PRESSED, true)
         activity.setResult(RESULT_OK, result)
         activity.finish()
     }) {
